@@ -33,7 +33,6 @@ addEventListener("keydown", function (event) {
     ".",
     "(",
     ")",
-    "=",
   ];
   if (keys.includes(event.key)) {
     append(event.key);
@@ -41,7 +40,7 @@ addEventListener("keydown", function (event) {
   if (event.key === "c" || event.key === "C") {
     clearInput();
   }
-  if (event.key === "Enter") {
+  if (event.key === "Enter" || event.key === "=") {
     calculate();
   }
   if (event.key === "Backspace") {
