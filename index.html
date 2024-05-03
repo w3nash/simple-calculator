@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Calculator - Jonash Marcelino</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="calculator">
+      <input title="The input/result box" type="text" id="display" readonly />
+      <div class="buttons">
+        <button
+          type="button"
+          title="Clear input/result"
+          class="top"
+          onclick="clearInput()"
+        >
+          A/C
+        </button>
+        <button
+          type="button"
+          title="Left parenthesis"
+          class="top"
+          onclick="append('(')"
+        >
+          (
+        </button>
+        <button
+          type="button"
+          title="Right parenthesis"
+          class="top"
+          onclick="append(')')"
+        >
+          )
+        </button>
+        <button
+          type="button"
+          title="Division operator"
+          class="operation"
+          onclick="append('/')"
+        >
+          ÷
+        </button>
+        <button type="button" title="Number 7" onclick="append('7')">7</button>
+        <button type="button" title="Number 8" onclick="append('8')">8</button>
+        <button type="button" title="Number 9" onclick="append('9')">9</button>
+        <button
+          type="button"
+          title="Multiplication operator"
+          class="operation"
+          onclick="append('*')"
+        >
+          ×
+        </button>
+        <button type="button" title="Number 4" onclick="append('4')">4</button>
+        <button type="button" title="Number 5" onclick="append('5')">5</button>
+        <button type="button" title="Number 6" onclick="append('6')">6</button>
+        <button
+          type="button"
+          title="Substraction operator"
+          class="operation"
+          onclick="append('-')"
+        >
+          -
+        </button>
+        <button type="button" title="Number 1" onclick="append('1')">1</button>
+        <button type="button" title="Number 2" onclick="append('2')">2</button>
+        <button type="button" title="Number 3" onclick="append('3')">3</button>
+        <button
+          type="button"
+          title="Addition operator"
+          class="operation"
+          onclick="append('+')"
+        >
+          +
+        </button>
+        <button type="button" title="Number 0" onclick="append('0')">0</button>
+        <button type="button" title="Decimal" onclick="append('.')">.</button>
+        <button type="button" title="Modulo operator" onclick="append('%')">
+          %
+        </button>
+        <button
+          type="button"
+          title="Equal"
+          class="operation"
+          onclick="calculate()"
+        >
+          =
+        </button>
+      </div>
+      <p>
+        Created by Jonash Marcelino 😊<br />
+        Human-Computer Interaction Project
+      </p>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
